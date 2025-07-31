@@ -85,9 +85,10 @@ main {
 }
 
 .developers-image {
-    width: 334px;
-    height: 140px;
+    width: 100%;
+    margin: 0 auto;
 }
+
 
 .developers-image img {
     width: 100%;
@@ -150,7 +151,12 @@ body>img:last-of-type {
         margin: 0 auto;
     }
 
-  
+
+    .developers-image {
+        width: 100%;
+        height: auto;
+    }
+
     .circle {
         width: 90px;
         height: 90px;
