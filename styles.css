@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: 'Poppins', sans-serif;
     background: #fff;
     color: #333;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -41,7 +41,7 @@ html, body {
     text-align: center;
 }
 
-.circles-section > div {
+.circles-section>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,7 @@ html, body {
     justify-content: center;
 }
 
-.circle > i {
+.circle>i {
     font-size: 55px;
 }
 
@@ -101,7 +101,7 @@ main {
     padding-bottom: 40px;
 }
 
-.who-we-are > #title {
+.who-we-are>#title {
     background: #033773;
     color: white;
     height: 40px;
@@ -111,19 +111,19 @@ main {
     margin: 0 50px;
 }
 
-.who-we-are > p {
+.who-we-are>p {
     color: #033773;
     text-align: justify;
     font-weight: 500;
     padding: 0 50px;
 }
 
-.who-we-are > p > span {
+.who-we-are>p>span {
     font-weight: bold;
 }
 
 /* Footer */
-body > img:last-of-type {
+body>img:last-of-type {
     width: 100%;
     margin-top: auto;
     display: block;
@@ -136,8 +136,8 @@ body > img:last-of-type {
         align-items: center;
     }
 
-    .who-we-are > #title,
-    .who-we-are > p {
+    .who-we-are>#title,
+    .who-we-are>p {
         padding: 0 20px;
         margin: 0;
     }
@@ -150,20 +150,14 @@ body > img:last-of-type {
         margin: 0 auto;
     }
 
-    body > img:last-of-type {
-    width: 100%;
-    margin-top: auto;
-    display: block;
-    }
-
+  
     .circle {
         width: 90px;
         height: 90px;
         font-size: 60px;
     }
 
-    .circle > i {
+    .circle>i {
         font-size: 60px;
     }
 }
-
