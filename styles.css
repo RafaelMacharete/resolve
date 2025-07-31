@@ -124,12 +124,25 @@ main {
 }
 
 /* Footer */
-body>img:last-of-type {
+footer > img {
     width: 100%;
     margin-top: auto;
     display: block;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer > video {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .circles-section {
