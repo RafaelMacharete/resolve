@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.header-container {
+    color: white;
+    background: #21A366;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.circles-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.circles-section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 120px;
+}
+
+.circle {
+    color: #21A366;
+    background: white;
+    font-size: 56px;
+    width: 76px;
+    height: 76px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle > i {
+    font-size: 55px;
+}
+
+.circles-section p {
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Body */
+main {
+    flex: 1;
+}
+
+.developers-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 20px;
+    color: #033773;
+}
+
+.developers-image {
+    width: 334px;
+    height: 140px;
+}
+
+.developers-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.who-we-are {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.who-we-are > #title {
+    background: #033773;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.who-we-are > p {
+    color: #033773;
+    text-align: justify;
+    font-weight: 500;
+    padding: 0 50px;
+}
+
+.who-we-are > p > span {
+    font-weight: bold;
+}
+
+/* Footer */
+body > img:last-of-type {
+    width: 100%;
+    margin-top: auto;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .circles-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .who-we-are > #title,
+    .who-we-are > p {
+        padding: 0 20px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .circles-section {
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    body > img:last-of-type {
+    width: 100%;
+    margin-top: auto;
+    display: block;
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
+        font-size: 60px;
+    }
+
+    .circle > i {
+        font-size: 60px;
+    }
+}
+
