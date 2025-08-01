@@ -20,11 +20,12 @@ body {
 footer {
     width: 80vw;
 }
-.graph-image{
+
+.graph-image {
     width: 80%;
 }
 
-.graph-container{
+.graph-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,28 +34,26 @@ footer {
 /* ===== HEADER ===== */
 .header-images {
     display: flex;
-    width: 80vw;
-
+    width: 80vh;
     align-items: center;
     justify-content: space-between;
     background: white;
     gap: 0.625rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .header-images img {
     max-width: 100%;
-    height: 20rem;
+    height: auto;
 }
 
 #logo-resolve {
-    position: relative;
+    /* position: relative; */
     height: 10rem;
-    left: 18%;
+    /* left: 18%; */
 }
 
 .header-container {
-    background: #21A366;
     color: white;
     padding: 2.5rem 1.25rem;
     display: flex;
@@ -151,6 +150,7 @@ main {
 
 .who-we-are>#title {
     background: #033773;
+    border-radius: 0.75rem;
     color: white;
     padding: 0.75rem;
     font-size: 1.4rem;
@@ -160,7 +160,6 @@ main {
 }
 
 .who-we-are>p {
-    color: #033773;
     text-align: justify;
     font-weight: 500;
     font-size: 1rem;
@@ -172,7 +171,7 @@ main {
 /* ===== VÍDEO MOCKUP ===== */
 .video-mockup {
     position: relative;
-    width: 50%;
+    width: 55%;
 }
 
 .laptop-frame {
@@ -182,10 +181,10 @@ main {
 
 .video-inside {
     position: absolute;
-    top: 25.5%;
+    top: 8.5%;
     left: 15.3%;
     width: 69.5%;
-    height: 46.5%;
+    height: 77%;
     border-radius: 0.75rem;
     object-fit: cover;
     z-index: 2;
@@ -194,7 +193,7 @@ main {
 /* ===== FOOTER ===== */
 .footer-design {
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 15rem;
     position: relative;
     overflow: hidden;
@@ -226,10 +225,48 @@ footer {
     align-items: center;
 }
 
+@media (max-width: 90rem) {
+
+    /* ===== HEADER ===== */
+    .header-images {
+        display: flex;
+        width: 80vh;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        gap: 0.625rem;
+        /* flex-wrap: wrap; */
+    }
+
+    .header-images img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #logo-resolve {
+        /* position: relative; */
+        height: 6rem;
+        /* left: 18%; */
+    }
+
+    .footer-design {
+        width: 80%;
+        height: 10rem;
+    }
+
+    /* ===== VÍDEO MOCKUP ===== */
+    .video-mockup {
+        position: relative;
+        width: 80%;
+    }
+
+}
+
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 64rem) {
     .footer-design {
-        height: 6.5rem;
+        height: 9rem;
+        width: 95%;
     }
 
     .footer-right img {
@@ -241,10 +278,19 @@ footer {
         left: 15%;
         height: 5rem;
     }
+
+    /* ===== VÍDEO MOCKUP ===== */
+    .video-mockup {
+        position: relative;
+        width: 100%;
+    }
+
 }
+
 /* Tablets */
 @media (max-width: 62rem) {
     .header-container {
+        background: #21A366;
         padding: 1.875rem 0.9375rem;
     }
 
@@ -264,6 +310,7 @@ footer {
     .who-we-are>p {
         width: 90%;
     }
+
     .footer-design {
         height: 7.5rem;
     }
@@ -271,9 +318,10 @@ footer {
     .footer-right img {
         height: 1.875rem;
     }
-    .graph-image{
-    width: 95%;
-}
+
+    .graph-image {
+        width: 95%;
+    }
 }
 
 /* Mobile */
@@ -284,6 +332,7 @@ footer {
     }
 
     .header-container {
+        background: #21A366;
         padding: 1.5625rem 0.625rem;
         gap: 1.25rem;
     }
@@ -336,14 +385,16 @@ footer {
     .footer-right img {
         height: 1.875rem;
     }
-        .graph-image{
-    width: 95%;
-}
+
+    .graph-image {
+        width: 95%;
+    }
 }
 
 /* Mobile pequeno */
 @media (max-width: 30rem) {
     .header-container h1 {
+        background: #21A366;
         font-size: 1.3rem;
     }
 
@@ -406,6 +457,7 @@ footer {
     footer {
         width: 100vw;
     }
+
     .footer-design {
         height: 5.5rem;
     }
@@ -424,8 +476,9 @@ footer {
         height: 3rem;
         left: 10%;
     }
-        .graph-image{
-    width: 95%;
-}
+
+    .graph-image {
+        width: 95%;
+    }
 
 }
