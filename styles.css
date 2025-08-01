@@ -63,47 +63,104 @@ footer {
     text-align: center;
 }
 
+/* Container fixo para centralizar tudo */
+.container-160 {
+    width: 100%;
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    /* Espaçamento lateral responsivo */
+}
+
 .header-container h1 {
     font-size: 2rem;
 }
 
 /* Círculos de ícones */
+/* Container que segura os cards */
 .circles-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
-    padding: 0 1.25rem;
-    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Cada card */
+.circle-container {
+    flex: 1 1 14rem; /* Cresce e encolhe, com largura base */
+    max-width: 20rem;
+    min-width: 12rem;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 1.25rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
 .circles-section>div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     max-width: 7.5rem;
 }
 
+.circles-section .circle {
+    background: #033773;
+    font-size: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+}
+
+/* Título do card */
+.circle-container .title {
+    font-size: 1rem;
+    color: #033773;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #033773;
+    padding-bottom: 0.25rem;
+    text-align: center;
+}
+
+
+/* Círculo com ícone */
 .circle {
-    background: white;
-    color: #21A366;
-    font-size: 3.5rem;
-    width: 4.75rem;
-    height: 4.75rem;
+    background: #033773;
+    font-size: 2.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
 }
+
 
 .circle i {
-    font-size: 3.4375rem;
+    font-size: 2.7rem;
 }
 
-.circles-section p {
-    font-size: 0.8125rem;
-    margin-top: 0.5rem;
-    word-break: break-word;
+/* Parágrafo do card */
+.circle-container p {
+    font-size: 0.875rem;
+    color: #333;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 /* ===== MAIN ===== */
@@ -225,12 +282,63 @@ footer {
     align-items: center;
 }
 
+@media (max-width: 160rem) {
+    .header-images {
+        width: 65vh;
+    }
+
+    .header-container {
+        padding-bottom: 0;
+    }
+
+    .circles-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem;
+        padding: 0 1.25rem;
+        text-align: center;
+        width: 100%;
+        max-width: 160rem;
+        margin: 0 auto;
+    }
+
+
+    .circles-section>div {
+        border: 2px solid black;
+        max-width: 13rem;
+        align-items: baseline;
+        padding: 30px 20px;
+        border-radius: 1.25rem;
+    }
+
+    .circles-section .title {
+        color: black;
+        font-size: 0.8125rem;
+        margin-top: 0.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: end;
+        word-break: break-word;
+        border-bottom: 1px solid #033773;
+    }
+
+    .circle-container p {
+        color: black;
+        text-align: justify;
+    }
+
+    #logo-resolve{
+        height: 7.5rem;
+    }
+}
+
 @media (max-width: 90rem) {
 
     /* ===== HEADER ===== */
     .header-images {
         display: flex;
-        width: 80vh;
+        width: 65vh;
         align-items: center;
         justify-content: space-between;
         background: white;
@@ -264,6 +372,18 @@ footer {
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 64rem) {
+
+    /* ===== HEADER ===== */
+    .header-images {
+        display: flex;
+        width: 55vh;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        gap: 0.625rem;
+        /* flex-wrap: wrap; */
+    }
+
     .footer-design {
         height: 9rem;
         width: 95%;
@@ -274,8 +394,8 @@ footer {
     }
 
     #logo-resolve {
-        position: relative;
-        left: 15%;
+        /* position: relative; */
+        /* left: 15%; */
         height: 5rem;
     }
 
@@ -290,7 +410,6 @@ footer {
 /* Tablets */
 @media (max-width: 62rem) {
     .header-container {
-        background: #21A366;
         padding: 1.875rem 0.9375rem;
     }
 
@@ -322,17 +441,22 @@ footer {
     .graph-image {
         width: 95%;
     }
+
+
 }
 
 /* Mobile */
 @media (max-width: 48rem) {
 
+    .header-images{
+        padding: 0 1rem;
+    }
+    
     #logo-resolve {
         height: 3.75rem;
     }
 
     .header-container {
-        background: #21A366;
         padding: 1.5625rem 0.625rem;
         gap: 1.25rem;
     }
@@ -389,6 +513,16 @@ footer {
     .graph-image {
         width: 95%;
     }
+
+
+}
+
+@media (max-width: 48rem) and (min-width: 30.05rem) {
+    .footer-design {
+        height: 7.5rem;
+        width: 55vh;
+    }
+
 }
 
 /* Mobile pequeno */
@@ -472,9 +606,9 @@ footer {
     }
 
     #logo-resolve {
-        position: relative;
+        /* position: relative; */
         height: 3rem;
-        left: 10%;
+        /* left: 10%; */
     }
 
     .graph-image {
