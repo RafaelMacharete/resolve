@@ -304,7 +304,7 @@ footer {
     }
 
 
-    .circles-section>div {
+    .circles-section div {
         border: 2px solid black;
         max-width: 13rem;
         align-items: baseline;
@@ -325,7 +325,7 @@ footer {
 
     .circle-container p {
         color: black;
-        text-align: justify;
+        text-align: left;
     }
 
     #logo-resolve{
@@ -410,7 +410,7 @@ footer {
 /* Tablets */
 @media (max-width: 62rem) {
     .header-container {
-        padding: 1.875rem 0.9375rem;
+        padding: 1.875rem 0rem;
     }
 
     .header-container h1 {
@@ -448,10 +448,6 @@ footer {
 /* Mobile */
 @media (max-width: 48rem) {
 
-    .header-images{
-        padding: 0 1rem;
-    }
-    
     #logo-resolve {
         height: 3.75rem;
     }
@@ -528,7 +524,7 @@ footer {
 /* Mobile pequeno */
 @media (max-width: 30rem) {
     .header-container h1 {
-        background: #21A366;
+        color: black;
         font-size: 1.3rem;
     }
 
