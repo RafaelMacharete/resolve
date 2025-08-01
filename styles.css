@@ -51,6 +51,7 @@ footer {
     /* position: relative; */
     height: 10rem;
     /* left: 18%; */
+    padding-left: 1rem;
 }
 
 .header-container {
